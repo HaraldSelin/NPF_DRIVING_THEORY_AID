@@ -29,11 +29,13 @@ public class LevelLoader : MonoBehaviour
     void LevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
         string jsonFile = File.ReadAllText(Application.dataPath + "/Levels/level.json");
-        Debug.Log(jsonFile);
         Level level = JsonUtility.FromJson<Level>(jsonFile);
-        Debug.Log(level.video_name);
-        Debug.Log(level.level_question);
-        Debug.Log(level.choices);
+        var foundTextMeshObjects = FindObjectsByType(typeof(TextMesh), FindObjectsSortMode.None);
+        Debug.Log(foundTextMeshObjects);
+        Debug.Log(foundTextMeshObjects.Length);
+
+        // Debug.Log(level.video_name);
+        // Debug.Log(level.level_question);
         // foreach(Choice choice in level.choices)
         // {
         //     Debug.Log("In foreach loop");
@@ -43,15 +45,13 @@ public class LevelLoader : MonoBehaviour
     }
 }
 
-public class Choice
-{
-    public string title;
-    public bool correct;
-}
-
 public class Level
 {
     public string video_name;
     public string level_question;
-    public Choice[] choices;
+    public string choice1;
+    public string choice2;
+    public string choice3;
+    public string choice4;
+    public int correct;
 }

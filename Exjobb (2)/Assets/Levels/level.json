@@ -1,22 +1,9 @@
 {
     "video_name":"test",
     "level_question":"Vad ska du göra i denna situation?",
-    "choices":[
-        {
-            "title":"Fortsätt köra",
-            "correct":false
-        },
-        {
-            "title":"Stanna bilen",
-            "correct":true
-        },
-        {
-            "title":"Sväng höger",
-            "correct":false
-        },
-        {
-            "title":"Sväng vänster",
-            "correct":false
-        }
-    ]
+    "choice1": "Fortsätt köra",
+    "choice2": "Stanna bilen",
+    "choice3": "Sväng höger",
+    "choice4": "Sväng vänster",
+    "correct": 1
 }
