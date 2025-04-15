@@ -1,9 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.Video;
 
 public class LevelLoader : MonoBehaviour
 {
+
+    public TMP_Text question;
+    public TMP_Text choice1;
+    public TMP_Text choice2;
+    public TMP_Text choice3;
+    public TMP_Text choice4;
+    public VideoPlayer videoPlayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,8 +41,14 @@ public class LevelLoader : MonoBehaviour
         string jsonFile = File.ReadAllText(Application.dataPath + "/Levels/level.json");
         Level level = JsonUtility.FromJson<Level>(jsonFile);
         var foundTextMeshObjects = FindObjectsByType(typeof(TextMesh), FindObjectsSortMode.None);
-        Debug.Log(foundTextMeshObjects);
-        Debug.Log(foundTextMeshObjects.Length);
+
+        question.text = level.level_question;
+        choice1.text = level.choice1;
+        choice2.text = level.choice2;
+        choice3.text = level.choice3;
+        choice4.text = level.choice4;
+        videoPlayer.url = Application.dataPath + "/Scenes/testvideo.mp4";
+        videoPlayer.Play();
 
         // Debug.Log(level.video_name);
         // Debug.Log(level.level_question);

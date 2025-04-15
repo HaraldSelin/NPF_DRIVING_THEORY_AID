@@ -144,7 +144,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28253883}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: c10c5ef27903b490e8d7a3952abe05b7, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1910,6 +1910,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab06b400a7e0dfe44a19c0be30050999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 208641803}
+  choice1: {fileID: 1353498861}
+  choice2: {fileID: 475883899}
+  choice3: {fileID: 467058268}
+  choice4: {fileID: 1291112681}
+  videoPlayer: {fileID: 28253884}
 --- !u!1 &2116453659
 GameObject:
   m_ObjectHideFlags: 0
