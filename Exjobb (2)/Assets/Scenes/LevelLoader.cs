@@ -41,7 +41,7 @@ public class LevelLoader : MonoBehaviour
 
     static List<Level> parseLevels(string json)
     {
-        Wrapper wrapper = JsonUtility.FromJson<Wrapper>(json);
+        Wrapper wrapper = JsonConvert.DeserializeObject<Wrapper>(json);
         return wrapper.data;
     }
 
