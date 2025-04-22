@@ -4,6 +4,8 @@ using System.IO;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Video;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class LevelLoader : MonoBehaviour
     public TMP_Text choice3;
     public TMP_Text choice4;
     public VideoPlayer videoPlayer;
+    private int levelNumber = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,10 +39,26 @@ public class LevelLoader : MonoBehaviour
         SceneManager.sceneLoaded -= LevelFinishedLoading;
     }
 
+    static List<Level> parseLevels(string json)
+    {
+        Wrapper wrapper = JsonUtility.FromJson<Wrapper>(json);
+        return wrapper.data;
+    }
+
     void LevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
+        List<Level> data;
         string jsonFile = File.ReadAllText(Application.dataPath + "/Levels/level.json");
-        Level level = JsonUtility.FromJson<Level>(jsonFile);
+        Debug.Log(jsonFile);
+        data = parseLevels(jsonFile);
+        Debug.Log(data);
+        LevelInfo(data[levelNumber]);
+    }
+
+    void LevelInfo(Level level) 
+    {
+       Debug.Log(level);
+        //Level level = JsonUtility.FromJson<Level>(jsonFile);
         var foundTextMeshObjects = FindObjectsByType(typeof(TextMesh), FindObjectsSortMode.None);
 
         question.text = level.level_question;
@@ -47,20 +66,10 @@ public class LevelLoader : MonoBehaviour
         choice2.text = level.choice2;
         choice3.text = level.choice3;
         choice4.text = level.choice4;
-        videoPlayer.url = Application.dataPath + "/Scenes/testvideo.mp4";
+        videoPlayer.url = Application.dataPath + "/Videos/" + level.video_name + ".mp4";
         videoPlayer.Play();
-
-        // Debug.Log(level.video_name);
-        // Debug.Log(level.level_question);
-        // foreach(Choice choice in level.choices)
-        // {
-        //     Debug.Log("In foreach loop");
-        //     Debug.Log(choice.title);
-        //     Debug.Log(choice.correct);
-        // }
     }
 }
-
 public class Level
 {
     public string video_name;
@@ -70,4 +79,9 @@ public class Level
     public string choice3;
     public string choice4;
     public int correct;
+}
+
+public class Wrapper
+{
+    public List<Level> data;
 }
