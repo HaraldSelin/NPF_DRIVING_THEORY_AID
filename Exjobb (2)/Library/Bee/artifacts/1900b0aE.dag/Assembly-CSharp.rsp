@@ -444,6 +444,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.44f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.44f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scenes/ChangeScene.cs"
+"Assets/Scenes/EndScript.cs"
 "Assets/Scenes/LevelLoader.cs"
 "Assets/Scenes/ResultScript.cs"
 "Assets/Scenes/StaticValues.cs"

@@ -23,20 +23,12 @@ public class LevelLoader : MonoBehaviour
     private int levelNumber = StaticValues.levelNumber;
     private int correctNumber;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Answer1.onClick.AddListener(() => ButtonClicked(1));
         Answer2.onClick.AddListener(() => ButtonClicked(2));
         Answer3.onClick.AddListener(() => ButtonClicked(3));
         Answer4.onClick.AddListener(() => ButtonClicked(4));
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void OnEnable()
@@ -60,13 +52,12 @@ public class LevelLoader : MonoBehaviour
         List<Level> data;
         string jsonFile = File.ReadAllText(Application.dataPath + "/Levels/level.json");
         data = parseLevels(jsonFile);
-        //Debug.Log(data[levelNumber]);
+        StaticValues.currentLevelLength = data.Count;
         LevelInfo(data[levelNumber]);
     }
 
     void LevelInfo(Level level) 
     {
-        //Level level = JsonUtility.FromJson<Level>(jsonFile);
         var foundTextMeshObjects = FindObjectsByType(typeof(TextMesh), FindObjectsSortMode.None);
         question.text = level.level_question;
         choice1.text = level.choice1;
@@ -74,6 +65,8 @@ public class LevelLoader : MonoBehaviour
         choice3.text = level.choice3;
         choice4.text = level.choice4;
         correctNumber = level.correct;
+        StaticValues.posFeedback = level.posFeedback;
+        StaticValues.negFeedback = level.negFeedback;
         videoPlayer.url = Application.dataPath + "/Videos/" + level.video_name + ".mp4";
         videoPlayer.Play();
     }
@@ -106,6 +99,8 @@ public class Level
     public string choice3;
     public string choice4;
     public int correct;
+    public string posFeedback;
+    public string negFeedback;
 }
 
 public class Wrapper

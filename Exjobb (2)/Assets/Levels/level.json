@@ -7,6 +7,8 @@
     "choice2": "Stanna bilen",
     "choice3": "Sväng höger",
     "choice4": "Sväng vänster",
+    "posFeedback": "Oj vad bra",
+    "negFeedback": "Tänk på högerregeln",
     "correct": 1
 },
 {
@@ -17,6 +19,8 @@
     "choice2": "Stanna bilen",
     "choice3": "Sväng höger",
     "choice4": "Sväng vänster",
+    "posFeedback": "Oj super!",
+    "negFeedback": "Du var på en huvudled",
     "correct": 1
 }
 ]}

@@ -5,15 +5,6 @@ public class ResultScript : MonoBehaviour
 {
 
     public TMP_Text ResultText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     void OnEnable()
     {
@@ -28,14 +19,16 @@ public class ResultScript : MonoBehaviour
 
     void LoadFeedback(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Jag kom hit!");
         if(StaticValues.isCorrect)
         {
-            ResultText.text = "Du hade rätt!";
+            StaticValues.correctAnswers += 1;
+            ResultText.text = "Du hade rätt \n" + StaticValues.posFeedback;
+
+
         }
         else
         {
-            ResultText.text = "Du hade fel!";
+            ResultText.text = "Du hade fel! \n" + StaticValues.negFeedback;
         }
 
         StaticValues.levelNumber += 1;
