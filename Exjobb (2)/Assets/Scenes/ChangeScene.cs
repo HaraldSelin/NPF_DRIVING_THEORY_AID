@@ -5,7 +5,7 @@ public class ChangeScene : MonoBehaviour
     public void GoToScene() 
     {
         StaticValues.levelNumber = 0;
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("CategoryScene");
     }
 
     public void NextScene()

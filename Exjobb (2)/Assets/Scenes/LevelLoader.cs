@@ -50,7 +50,7 @@ public class LevelLoader : MonoBehaviour
     void LevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
         List<Level> data;
-        string jsonFile = File.ReadAllText(Application.dataPath + "/Levels/level.json");
+        string jsonFile = File.ReadAllText(Application.dataPath + "/Levels/level"+StaticValues.currentCategory+".json");
         data = parseLevels(jsonFile);
         StaticValues.currentLevelLength = data.Count;
         LevelInfo(data[levelNumber]);
@@ -75,19 +75,14 @@ public class LevelLoader : MonoBehaviour
     {
         if(correctNumber == ButtonId)
         {
-            Debug.Log("Correct!");
             StaticValues.isCorrect = true;
-
         }
         else
         {
-            Debug.Log("Incorrect!");
             StaticValues.isCorrect = false;
         }
         
         SceneManager.LoadScene("ResultScene");
-        
-
     }
 }
 public class Level

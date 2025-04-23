@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1440
     height: 900
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 272.5
     height: 632.5
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 340.5
     height: 844
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -355,9 +355,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: a0b80000
       m_LastClickedID: 0
-      m_ExpandedIDs: 86e2ffff2ce3ffff3ae4ffffdae6ffffece9ffffeaebffff5cecffffaeecffffc0f2ffff0efbffff48bd0000b0be00003ac3000044c3000062c3000062ce0000face0000
+      m_ExpandedIDs: c2e9ffff38eaffff78ebffff50f7ffff86f8ffff0efbffff9eb00000a6b00000c4b00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1183,7 +1183,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Levels
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1193,16 +1193,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Levels
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/anvandare/Desktop/tqpr10/Exjobb (2)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 1cb00000
-    m_LastClickedID: 45084
-    m_ExpandedIDs: 00000000baaf0000bcaf0000beaf0000c0af000000ca9a3bffffff7f
+    m_SelectedIDs: 1eb00000
+    m_LastClickedID: 45086
+    m_ExpandedIDs: 00000000beaf0000c0af0000c2af0000c4af000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1231,7 +1231,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000baaf0000bcaf0000beaf0000c0af0000
+    m_ExpandedIDs: 00000000beaf0000c0af0000c2af0000c4af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
