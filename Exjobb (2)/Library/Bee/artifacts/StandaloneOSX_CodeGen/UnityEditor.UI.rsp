@@ -434,7 +434,7 @@
 "Library/PackageCache/com.unity.ugui@a9eaa85fb1b8/Editor/UGUI/UI/ToggleEditor.cs"
 -langversion:9.0
 /deterministic
-/optimize+
+/optimize-
 /debug:portable
 /nologo
 /RuntimeMetadataVersion:v4.0.30319

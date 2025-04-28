@@ -51,7 +51,7 @@ public class LevelLoader : MonoBehaviour
     void LevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
         List<Level> data;
-        string jsonFile = File.ReadAllText(Application.dataPath + "/Levels/level"+StaticValues.currentCategory+".json");
+        string jsonFile = File.ReadAllText(Application.streamingAssetsPath + "/Levels/level"+StaticValues.currentCategory+".json");
         data = parseLevels(jsonFile);
         StaticValues.currentLevelLength = data.Count;
         level = data[levelNumber];
@@ -69,7 +69,7 @@ public class LevelLoader : MonoBehaviour
         correctNumber = level.correct;
         StaticValues.posFeedback = level.posFeedback;
         StaticValues.negFeedback = level.negFeedback;
-        videoPlayer.url = Application.dataPath + "/Videos/" + level.video1 + ".mp4";
+        videoPlayer.url = Application.streamingAssetsPath + "/Videos/" + level.video1 + ".mp4";
         videoPlayer.Play();
     }
 
@@ -88,7 +88,7 @@ public class LevelLoader : MonoBehaviour
         Answer3.gameObject.SetActive(false);
         Answer4.gameObject.SetActive(false);
     
-        videoPlayer.url = Application.dataPath + "/Videos/" + level.video2 + ".mp4";
+        videoPlayer.url = Application.streamingAssetsPath + "/Videos/" + level.video2 + ".mp4";
         videoPlayer.Play();
         videoPlayer.loopPointReached += EndReached;
         

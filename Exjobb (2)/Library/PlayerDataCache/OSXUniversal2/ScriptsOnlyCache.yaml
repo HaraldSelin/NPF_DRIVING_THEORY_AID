@@ -2357,4 +2357,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/ResultScene.unity
   - Assets/Scenes/EndScene.unity
-  playerPath: /Users/anvandare/Desktop/tqpr10_test/tqpr10/Exjobb (2)/build_mac/exjobb_test.app
+  playerPath: /Users/anvandare/Desktop/tqpr10_test/tqpr10/Exjobb (2)/build_mac/exjobb_test1.app
