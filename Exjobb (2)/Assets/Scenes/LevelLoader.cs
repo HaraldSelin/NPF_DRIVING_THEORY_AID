@@ -22,6 +22,7 @@ public class LevelLoader : MonoBehaviour
     public Button Answer4;
     private int levelNumber = StaticValues.levelNumber;
     private int correctNumber;
+    private Level level;
 
     void Start()
     {
@@ -53,10 +54,11 @@ public class LevelLoader : MonoBehaviour
         string jsonFile = File.ReadAllText(Application.dataPath + "/Levels/level"+StaticValues.currentCategory+".json");
         data = parseLevels(jsonFile);
         StaticValues.currentLevelLength = data.Count;
-        LevelInfo(data[levelNumber]);
+        level = data[levelNumber];
+        LevelInfo();
     }
 
-    void LevelInfo(Level level) 
+    void LevelInfo() 
     {
         var foundTextMeshObjects = FindObjectsByType(typeof(TextMesh), FindObjectsSortMode.None);
         question.text = level.level_question;
@@ -67,7 +69,7 @@ public class LevelLoader : MonoBehaviour
         correctNumber = level.correct;
         StaticValues.posFeedback = level.posFeedback;
         StaticValues.negFeedback = level.negFeedback;
-        videoPlayer.url = Application.dataPath + "/Videos/" + level.video_name + ".mp4";
+        videoPlayer.url = Application.dataPath + "/Videos/" + level.video1 + ".mp4";
         videoPlayer.Play();
     }
 
@@ -81,13 +83,27 @@ public class LevelLoader : MonoBehaviour
         {
             StaticValues.isCorrect = false;
         }
+        Answer1.gameObject.SetActive(false);
+        Answer2.gameObject.SetActive(false);
+        Answer3.gameObject.SetActive(false);
+        Answer4.gameObject.SetActive(false);
+    
+        videoPlayer.url = Application.dataPath + "/Videos/" + level.video2 + ".mp4";
+        videoPlayer.Play();
+        videoPlayer.loopPointReached += EndReached;
         
+    }
+
+    void EndReached(VideoPlayer vp)
+    {
         SceneManager.LoadScene("ResultScene");
     }
+
 }
 public class Level
 {
-    public string video_name;
+    public string video1;
+    public string video2;
     public string level_question;
     public string choice1;
     public string choice2;
@@ -96,6 +112,7 @@ public class Level
     public int correct;
     public string posFeedback;
     public string negFeedback;
+    
 }
 
 public class Wrapper

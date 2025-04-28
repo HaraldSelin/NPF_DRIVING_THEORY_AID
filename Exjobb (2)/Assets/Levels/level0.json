@@ -2,27 +2,43 @@
 "data":
     [{
     "question_nr": 1,
-    "video_name":"testvideo",
-    "level_question":"Vad ska du göra i denna situation?",
-    "choice1": "Fortsätt köra",
-    "choice2": "Stanna bilen",
-    "choice3": "Sväng höger",
-    "choice4": "Sväng vänster",
-    "posFeedback": "Oj vad bra",
-    "negFeedback": "Tänk på högerregeln",
-    "correct": 1
+    "video1":"vajningsplikt/1",
+    "video2":"vajningsplikt/2",
+    "level_question":"Du ska svänga vänster, hur agerar du härnäst?",
+    "choice1": "Andra bilen har väjningsplikt, jag kör",
+    "choice2": "Jag har väjningsplikt, låter bilen passera och sedan svänger",
+    "choice3": "Jag får inte svänga vänster, åker rakt fram",
+    "choice4": "U-sväng",
+    "posFeedback": "Du hade väjningsplikt, bra jobbat!",
+    "negFeedback": "Tänk på att du har väjningsplikt om du kör över ett annat körfält",
+    "correct": 2
 },
 {
     "question_nr": 2,
-    "video_name":"testvideo",
-    "level_question":"DET HÄR ÄR FRÅGA 2",
+    "video1":"hogerregeln/1",
+    "video2":"hogerregeln/2",
+    "level_question":"Du ska fortsätta rakt fram, det kommer en bil. Hur agerar du?",
     "choice1": "Fortsätt köra",
-    "choice2": "Stanna bilen",
-    "choice3": "Sväng höger",
+    "choice2": "Stanna helt",
+    "choice3": "Sagta in och låt bilen passera",
     "choice4": "Sväng vänster",
-    "posFeedback": "Oj super!",
-    "negFeedback": "Du var på en huvudled",
-    "correct": 1
+    "posFeedback": "Högerregeln anpassas, bra jobbat!",
+    "negFeedback": "Tänk på högerregeln.",
+    "correct": 3
+}
+,
+{
+    "question_nr": 3,
+    "video1":"huvudled/1",
+    "video2":"huvudled/2",
+    "level_question":"Du ska svänga höger. Det är även en bil som kommer från höger. Hur agerar du?",
+    "choice1": "Jag har företräde, jag svänger höger",
+    "choice2": "Bilarna påverkar inte min situation, jag svänger höger",
+    "choice3": "Låt bilen passera, sedan sväng",
+    "choice4": "Jag får inte svänga höger",
+    "posFeedback": "Bilen påverkar inte situationen, bra jobbat!",
+    "negFeedback": "Påverkar bilen till höger din sväng?",
+    "correct": 2
 }
 ]
 }
