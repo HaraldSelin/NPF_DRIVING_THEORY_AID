@@ -137,6 +137,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ProgressBarScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "ResourceManager",
             "fullManagedTypeName": "",
@@ -1140,6 +1147,41 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.VerticalLayoutGroup",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UIElementsModule.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UIElements.PanelSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UIElementsModule.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UIElements.StyleSheet",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UIElementsModule.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UIElements.ThemeStyleSheet",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UIElementsModule.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UIElements.UIDocument",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UIElementsModule.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UIElements.VisualTreeAsset",
             "moduleName": "",
             "usedInScenes": []
         },

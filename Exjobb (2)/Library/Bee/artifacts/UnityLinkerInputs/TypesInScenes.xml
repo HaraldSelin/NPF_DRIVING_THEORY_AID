@@ -4,6 +4,7 @@
 		<type fullname="ChangeScene" preserve="nothing"/>
 		<type fullname="EndScript" preserve="nothing"/>
 		<type fullname="LevelLoader" preserve="nothing"/>
+		<type fullname="ProgressBarScript" preserve="nothing"/>
 		<type fullname="ResultScript" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.2D.Animation.Runtime">
@@ -141,5 +142,12 @@
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Toggle" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="UnityEngine.UIElementsModule">
+		<type fullname="UnityEngine.UIElements.PanelSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.UIElements.StyleSheet" preserve="nothing"/>
+		<type fullname="UnityEngine.UIElements.ThemeStyleSheet" preserve="nothing"/>
+		<type fullname="UnityEngine.UIElements.UIDocument" preserve="nothing"/>
+		<type fullname="UnityEngine.UIElements.VisualTreeAsset" preserve="nothing"/>
 	</assembly>
 </linker>

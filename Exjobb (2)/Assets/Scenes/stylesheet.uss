@@ -1,0 +1,13 @@
+.bar {
+    height: 20px;
+    min-height: 0;
+    max-height: 20px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.unity-progress-bar__progress {
+    background-color: yellow;
+    margin: 0px;
+}

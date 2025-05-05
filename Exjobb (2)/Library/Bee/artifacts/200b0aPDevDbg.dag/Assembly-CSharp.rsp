@@ -355,6 +355,7 @@
 "Assets/Scenes/ChangeScene.cs"
 "Assets/Scenes/EndScript.cs"
 "Assets/Scenes/LevelLoader.cs"
+"Assets/Scenes/ProgressBarScript.cs"
 "Assets/Scenes/ResultScript.cs"
 "Assets/Scenes/StaticValues.cs"
 -langversion:9.0

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/stylesheet.uss?fileID=7433441132597879392&amp;guid=2df7f0086dfdc4ca4a13a014c2e69c36&amp;type=3#stylesheet" />
+    <ui:VisualElement style="flex-grow: 0;">
+        <ui:VisualElement style="flex-grow: 1; height: 10px;">
+            <ui:ProgressBar value="1" name="progressBar" high-value="10" class="bar" style="height: auto; min-height: 0; min-width: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

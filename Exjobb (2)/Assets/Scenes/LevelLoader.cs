@@ -24,8 +24,10 @@ public class LevelLoader : MonoBehaviour
     private int correctNumber;
     private Level level;
 
+
     void Start()
     {
+        
         Answer1.onClick.AddListener(() => ButtonClicked(1));
         Answer2.onClick.AddListener(() => ButtonClicked(2));
         Answer3.onClick.AddListener(() => ButtonClicked(3));
