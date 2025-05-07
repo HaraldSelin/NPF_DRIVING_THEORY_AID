@@ -4,6 +4,7 @@
 			<method name="GoToScene"/>
 			<method name="NextScene"/>
 			<method name="NextScene"/>
+			<method name="QuitGame"/>
 		</type>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">

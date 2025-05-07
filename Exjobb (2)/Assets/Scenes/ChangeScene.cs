@@ -8,6 +8,11 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("CategoryScene");
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void NextScene()
     {
         if(StaticValues.levelNumber < StaticValues.currentLevelLength)
