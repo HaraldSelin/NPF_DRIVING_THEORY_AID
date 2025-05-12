@@ -1,0 +1,17 @@
+{   
+"data":
+    [{
+    "question_nr": 1,
+    "video1":"landsvag/1",
+    "video2":"landsvag/2",
+    "level_question":"Du ska svänga vänster, hur gör du?",
+    "choice1": "Jag har företräde, jag svänger",
+    "choice2": "Vänta på att en bil åker förbi, sen sväng",
+    "choice3": "Vänta på all mötande trafik och sedan sväng",
+    "choice4": "Jag får inte svänga vänster",
+    "posFeedback": "Du har väjningsplikt när du kör över ett annat körfält",
+    "negFeedback": "Tänk på väjningsplikten och mötande trafiken",
+    "correct": 3
+}
+]
+}
