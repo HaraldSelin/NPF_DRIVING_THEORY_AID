@@ -39,6 +39,32 @@
     "posFeedback": "Bilen påverkar inte situationen, bra jobbat!",
     "negFeedback": "Påverkar bilen till höger din sväng?",
     "correct": 2
+},
+{
+    "question_nr": 4,
+    "video1":"bildorr/1",
+    "video2":"bildorr/2",
+    "level_question":"Var ska du i första hand rikta din uppmärksamhet?",
+    "choice1": "På mötande trafik",
+    "choice2": "På den parkerade bilen i avfarten",
+    "choice3": "På bilen som stannat vid vägrenen",
+    "choice4": "På min hastighet",
+    "posFeedback": "Det gäller att ha god bromsberedskap på mindre vägar med hinder, Bra jobbat!",
+    "negFeedback": "Håll uppsikt för oförväntade situationer",
+    "correct": 3
+},
+{
+    "question_nr": 5,
+    "video1":"fotgangare/1",
+    "video2":"fotgangare/2",
+    "level_question":"Varför ska du vara extra uppmärksam när du kör i den här situationen?",
+    "choice1": "Det blir 30km/h så du ska sagta ner",
+    "choice2": "Fotgängaren på trotoaren som kanske springer ut över vägen",
+    "choice3": "Det kan svänga ett fordon från vänster",
+    "choice4": "Det kommer mötande trafik längre fram",
+    "posFeedback": "Det gäller att ha god bromsberedskap på mindre vägar med hinder, Bra jobbat!",
+    "negFeedback": "Håll uppsikt för oförväntade situationer",
+    "correct": 2
 }
 ]
 }
