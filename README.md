@@ -1,4 +1,5 @@
-Examensarbetet: \n Spelifiering av Körkortsteori
+Examensarbetet: 
+Spelifiering av Körkortsteori
 
 
 Detta är ett Unity spel som har syftet att hjälpa individer med NPF-diagnoser att lära sig teorin inför körkortsprovet. 
